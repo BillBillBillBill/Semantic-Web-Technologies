@@ -1,0 +1,146 @@
+{
+    "http://weibo.com/billbillbillbill": {
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+            {
+                "type": "uri",
+                "value": "http://xmlns.com/foaf/0.1/Person"
+            }
+        ],
+        "http://xmlns.com/foaf/0.1/title": [
+            {
+                "type": "literal",
+                "value": "Mr"
+            }
+        ],
+        "http://xmlns.com/foaf/0.1/firstName": [
+            {
+                "type": "literal",
+                "value": "Xiongbiao"
+            }
+        ],
+        "http://xmlns.com/foaf/0.1/lastName": [
+            {
+                "type": "literal",
+                "value": "Huang"
+            }
+        ],
+        "http://xmlns.com/foaf/0.1/mbox": [
+            {
+                "type": "uri",
+                "value": "mailto:billo@qq.com"
+            }
+        ],
+        "http://xmlns.com/foaf/0.1/homepage": [
+            {
+                "type": "uri",
+                "value": "http://weibo.com/billbillbillbill"
+            }
+        ],
+        "http://xmlns.com/foaf/0.1/nick": [
+            {
+                "type": "literal",
+                "value": "Bill"
+            }
+        ],
+        "http://xmlns.com/foaf/0.1/Image": [
+            {
+                "type": "uri",
+                "value": "http://ww2.sinaimg.cn/small/69808911gw1du11ilq3yvj.jpg"
+            }
+        ],
+        "http://xmlns.com/foaf/0.1/phone": [
+            {
+                "type": "literal",
+                "value": "18819473330"
+            }
+        ],
+        "http://xmlns.com/foaf/0.1/interest": [
+            {
+                "type": "uri",
+                "value": "http://www.wikimedia.org"
+            }
+        ],
+        "http://xmlns.com/foaf/0.1/knows": [
+            {
+                "type": "bnode",
+                "value": "_:genid1"
+            }
+        ],
+        "http://example.org/stuff/1.0/favoriteFood": [
+            {
+                "type": "bnode",
+                "value": "_:genid2"
+            }
+        ],
+        "http://example.org/stuff/1.0/favoriteMovie": [
+            {
+                "type": "bnode",
+                "value": "_:genid3"
+            }
+        ],
+        "http://xmlns.com/foaf/0.1/schoolHomepage": [
+            {
+                "type": "uri",
+                "value": "http://www.sysu.edu.cn"
+            }
+        ],
+        "http://xmlns.com/foaf/0.1/accountName": [
+            {
+                "type": "literal",
+                "value": "xiongbiao"
+            }
+        ],
+        "http://xmlns.com/foaf/0.1/weblog": [
+            {
+                "type": "uri",
+                "value": "http://blog.csdn.net/huangxiongbiao"
+            }
+        ]
+    },
+    "_:genid1": {
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+            {
+                "type": "uri",
+                "value": "http://xmlns.com/foaf/0.1/Person"
+            }
+        ],
+        "http://xmlns.com/foaf/0.1/name": [
+            {
+                "type": "literal",
+                "value": "Huang Weiping"
+            },
+            {
+                "type": "literal",
+                "value": "Jing Xiaoming"
+            },
+            {
+                "type": "literal",
+                "value": "Jin Benwei"
+            }
+        ]
+    },
+    "_:genid2": {
+        "http://example.org/stuff/1.0/name": [
+            {
+                "type": "literal",
+                "value": "Apple"
+            },
+            {
+                "type": "literal",
+                "value": "Banana"
+            }
+        ]
+    },
+    "_:genid3": {
+        "http://example.org/stuff/1.0/name": [
+            {
+                "type": "literal",
+                "value": "Life"
+            },
+            {
+                "type": "literal",
+                "value": "Monty Python"
+            }
+        ]
+    }
+}
