@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ex: <http://example.org/stuff/1.0/> .
+
+<http://weibo.com/billbillbillbill>
+    a foaf:Person ;
+    foaf:title "Mr" ;
+    foaf:firstName "Xiongbiao" ;
+    foaf:lastName "Huang" ;
+    foaf:mbox <mailto:billo@qq.com> ;
+    foaf:homepage <http://weibo.com/billbillbillbill> ;
+    foaf:nick "Bill" ;
+    foaf:Image <http://ww2.sinaimg.cn/small/69808911gw1du11ilq3yvj.jpg> ;
+    foaf:phone "18819473330" ;
+    foaf:interest <http://www.wikimedia.org> ;
+    foaf:knows [
+        a foaf:Person ;
+        foaf:name "Huang Weiping" ;
+        a foaf:Person ;
+        foaf:name "Jing Xiaoming" ;
+        a foaf:Person ;
+        foaf:name "Jin Benwei"
+    ] ;
+    ex:favoriteFood [
+        ex:name "Apple" ;
+        ex:name "Banana"
+    ] ;
+    ex:favoriteMovie [
+        ex:name "Life" ;
+        ex:name "Monty Python"
+    ] ;
+    foaf:schoolHomepage <http://www.sysu.edu.cn> ;
+    foaf:accountName "xiongbiao" ;
+    foaf:weblog <http://blog.csdn.net/huangxiongbiao> ;
+    .

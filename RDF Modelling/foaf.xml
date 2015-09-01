@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:ns0="http://example.org/stuff/1.0/">
+
+  <foaf:Person rdf:about="http://weibo.com/billbillbillbill">
+    <foaf:title>Mr</foaf:title>
+    <foaf:firstName>Xiongbiao</foaf:firstName>
+    <foaf:lastName>Huang</foaf:lastName>
+    <foaf:mbox rdf:resource="mailto:billo@qq.com"/>
+    <foaf:homepage rdf:resource="http://weibo.com/billbillbillbill"/>
+    <foaf:nick>Bill</foaf:nick>
+    <foaf:Image rdf:resource="http://ww2.sinaimg.cn/small/69808911gw1du11ilq3yvj.jpg"/>
+    <foaf:phone>18819473330</foaf:phone>
+    <foaf:interest rdf:resource="http://www.wikimedia.org"/>
+    <foaf:knows>
+      <foaf:Person>
+        <foaf:name>Huang Weiping</foaf:name>
+        <foaf:name>Jing Xiaoming</foaf:name>
+        <foaf:name>Jin Benwei</foaf:name>
+      </foaf:Person>
+    </foaf:knows>
+
+    <ns0:favoriteFood>
+      <rdf:Description>
+        <ns0:name>Apple</ns0:name>
+        <ns0:name>Banana</ns0:name>
+      </rdf:Description>
+    </ns0:favoriteFood>
+
+    <ns0:favoriteMovie>
+      <rdf:Description>
+        <ns0:name>Life</ns0:name>
+        <ns0:name>Monty Python</ns0:name>
+      </rdf:Description>
+    </ns0:favoriteMovie>
+
+    <foaf:schoolHomepage rdf:resource="http://www.sysu.edu.cn"/>
+    <foaf:accountName>xiongbiao</foaf:accountName>
+    <foaf:weblog rdf:resource="http://blog.csdn.net/huangxiongbiao"/>
+  </foaf:Person>
+
+</rdf:RDF>
