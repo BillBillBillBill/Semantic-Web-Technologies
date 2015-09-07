@@ -1,0 +1,78 @@
+Query1:
+通过firstName查询lastName
+
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+
+select ?name ?lastName
+WHERE {
+  ?v foaf:firstName ?name;
+    foaf:lastName ?lastName.
+}
+
+Result:
+
+<?xml version="1.0"?>
+<sparql xmlns="http://www.w3.org/2005/sparql-results#">
+  <head>
+    <variable name="name"/>
+    <variable name="lastName"/>
+  </head>
+  <results>
+    <result>
+      <binding name="name">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#string">Xiongbiao</literal>
+      </binding>
+      <binding name="lastName">
+        <literal datatype="http://www.w3.org/2001/XMLSchema#string">Huang</literal>
+      </binding>
+    </result>
+  </results>
+</sparql>
+
+
+
+Query2:
+通过是否认识名字为"Huang Weiping"这个人，返回值为布尔
+
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+
+ask{
+ ?v foaf:knows ?name.
+ ?name foaf:name "Huang Weiping";
+}
+
+Result:
+<?xml version="1.0"?>
+<sparql xmlns="http://www.w3.org/2005/sparql-results#">
+  <head>
+  </head>
+  <boolean>false</boolean>
+</sparql>
+
+
+
+Query3:
+
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+
+Construct {
+  ?v  foaf:name ?name;
+    foaf:mbox ?mbox;
+    foaf:schoolHomepage ?schoolHomepage.
+}
+WHERE {
+    ?v foaf:firstName ?name;
+    foaf:mbox ?mbox;
+    foaf:schoolHomepage ?schoolHomepage.
+}
+
+Result:
+
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ns0:   <http://example.org/stuff/1.0/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://weibo.com/billbillbillbill>
+        foaf:mbox            <mailto:billo@qq.com> ;
+        foaf:name            "Xiongbiao" ;
+        foaf:schoolHomepage  <http://www.sysu.edu.cn> .
