@@ -1,0 +1,10 @@
+http://example.org/inst/Museion @rdfs:subClassOf http://example.org/term/modern_art_museum.
+http://example.org/inst/Museion @rdfs:subClassOf http://example.org/inst/Museion.
+http://example.org/inst/Museion @rdfs:subClassOf http://example.org/term/art_museum.
+http://example.org/inst/Museion @rdfs:subClassOf http://example.org/term/tourism_object.
+http://example.org/inst/Museion @rdfs:subClassOf http://example.org/term/tourism_attraction.
+http://example.org/inst/Museion @rdfs:subClassOf http://example.org/term/museum.
+http://example.org/inst/Museion @rdf:type rdfs:Class.
+http://example.org/inst/Museion @rdf:type rdfs:Resource.
+http://example.org/inst/ChickenHut @http://example.org/term/has_TripAdvisor_rating "3.5"^^http://www.w3.org/2001/XMLSchema#decimal.
+http://example.org/inst/ChickenHut @http://example.org/term/has_rating "3.5"^^http://www.w3.org/2001/XMLSchema#decimal.
